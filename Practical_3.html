@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>E-Commerce Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="logo">ShopEasy</div>
+    <ul class="nav-links">
+        <li><a href="Practical_3.html">Home</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li class="cart" onclick="toggleCart()">🛒 Cart <span id="cart-count">0</span>
+</li>
+    </ul>
+</nav>
+<div class="cart-box" id="cart-box">
+    <h3>My Cart</h3>
+    <p>Items in cart: <span id="cart-items">0</span></p>
+    <p>Total Price: ₹<span id="cart-total">0</span></p>
+</div>
+
+<h2 style="text-align:center; margin-top:30px;">Featured Products</h2>
+
+<!-- Products -->
+<section class="products">
+    <div class="product-card">
+        <h3>Headphones</h3>
+        <p>₹<span class="price">1500</span></p>
+        <button onclick="addToCart(1500)">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <h3>Smart Watch</h3>
+        <p>₹<span class="price">2500</span></p>
+        <button onclick="addToCart(2500)">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <h3>Wireless Mouse</h3>
+        <p>₹<span class="price">800</span></p>
+        <button onclick="addToCart(800)">Add to Cart</button>
+    </div>
+</section>
+
+<!-- Total Price -->
+<div class="total">
+    Total Price: ₹<span id="total-price">0</span>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
